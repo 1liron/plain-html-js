@@ -1,0 +1,22 @@
+
+<html>
+<head>
+    <script type= "text/javascript" >
+      function IsEven() {
+        var number = document.getElementById ("TextBox1").value;
+        if (number % 2 == 0) {
+          alert(number + " is even number");
+        }
+        else {
+          alert (number + " is odd number");
+        }
+      }
+      </script>
+    </head>
+    <body>
+      <form id="form1" runat="servers">
+        Number : <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+        <input type="button" value="Check Number" onclick="IsEven()" />
+        </form>
+  </body>
+</html>
